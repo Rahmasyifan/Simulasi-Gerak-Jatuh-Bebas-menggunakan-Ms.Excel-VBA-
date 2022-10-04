@@ -1,0 +1,8 @@
+Private Sub Ama_Click()
+ Range("B13").Value = 0 '0
+ delta_t = Range("B9").Value '0,1
+  While Range("B13").Value < 9
+  Range("B13").Value = Range("B13").Value + delta_t
+  DoEvents
+ Wend
+End Sub
